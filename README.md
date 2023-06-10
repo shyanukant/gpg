@@ -59,9 +59,9 @@ Any Message for me😊
     gpg --decrypt <FILE NAME>
 ```
 
-### Impersonate Another Github User
+## Impersonate Another Github User
 
 ```bash
     GIT_COMMITTER_NAME="NAME" GIT_COMMITTER_EMAIL="EMAIL" \
-    git commit --author="GIT_COMMITTER_NAME <GIT _COMMITTER_EMAIL>" -m "Your Commit Massage".
+    git commit --author="$GIT_COMMITTER_NAME <$GIT_COMMITTER_EMAIL>" -m "Your Commit Massage".
 ```
