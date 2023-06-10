@@ -65,3 +65,29 @@ Any Message for me😊
     GIT_COMMITTER_NAME="NAME" GIT_COMMITTER_EMAIL="EMAIL" \
     git commit --author="NAME <EMAIL>" -m "Your Commit Massage".
 ```
+
+`Note - But this commit is not verify form github`
+
+## Signing Git Commands
+1. Retrieve your key ID 
+2. Export Your Public Key
+```bash
+    gpg --armor --export <KEY_ID>
+```
+
+3. Save it under Github Settings
+    `SSH AND GPG keys > New GPG Key`
+
+4. Tell Git about your key 
+```bash
+    git config --global user.signinkey <KEY_ID>
+```
+5. Sign your git commits 
+```bash
+    git commit -S -m "YOUR_COMMIT_MESSAGE"
+```
+
+Automatically sign all commits(Optional) 
+```bash
+    git config --global commit.gpgsign true
+```
