@@ -63,5 +63,5 @@ Any Message for me😊
 
 ```bash
     GIT_COMMITTER_NAME="NAME" GIT_COMMITTER_EMAIL="EMAIL" \
-    git commit --author="$GIT_COMMITTER_NAME <$GIT_COMMITTER_EMAIL>" -m "Your Commit Massage".
+    git commit --author="NAME <EMAIL>" -m "Your Commit Massage".
 ```
